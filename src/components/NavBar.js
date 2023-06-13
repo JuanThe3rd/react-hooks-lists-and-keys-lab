@@ -5,9 +5,11 @@ function NavBar() {
 
   return (
     <nav>
-      {links.map(link => {
-        return <a key={link} href={link}>{link}</a>
-      })}
+      {
+        links.map(link => {
+          return <a key={link} href={'#'+link}>{link}</a>
+        })
+      }
     </nav>);
 }
 
